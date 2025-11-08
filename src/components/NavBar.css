@@ -1,0 +1,65 @@
+/* ===============================
+   NAVBAR - CONGRESO TIC'S (versión compacta con texto negro)
+   =============================== */
+
+/* Fondo con colores institucionales */
+.bg-utl {
+  background: linear-gradient(90deg, #003366, #009fe3, #00b59c);
+  border-bottom: 3px solid #00b59c;
+}
+
+/* ===== LOGO NAVBAR ===== */
+.logo-utl-nav {
+  width: 38px !important;           
+  height: 38px !important;
+  border-radius: 50%;
+  border: 2px solid #ffffff;        
+  background-color: #ffffff;
+  object-fit: contain;
+  box-shadow: 0 0 6px rgba(0, 181, 156, 0.4);
+  padding: 2px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.logo-utl-nav:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 10px rgba(0, 181, 156, 0.6);
+}
+
+/* Texto de marca */
+.navbar-brand span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.3px;
+}
+
+/* Enlaces del menú */
+.nav-link {
+  color: #000000 !important; /* 🔹 Texto negro */
+  font-weight: 500;
+  margin: 0 12px;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #005f56 !important; /* 🔹 Verde más oscuro al pasar el cursor */
+  text-shadow: 0 0 4px rgba(0, 181, 156, 0.3);
+}
+
+.nav-link.active {
+  color: #00b59c !important; /* 🔹 Activo en verde institucional */
+  font-weight: 600;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .logo-utl-nav {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .navbar-brand span {
+    font-size: 1rem;
+  }
+}

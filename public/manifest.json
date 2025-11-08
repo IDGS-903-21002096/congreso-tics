@@ -1,0 +1,37 @@
+{
+  "name": "Congreso TICs - UTL",
+  "short_name": "Congreso TICs",
+  "description": "Aplicación Web Progresiva del Congreso de Tecnologías de la Información de la Universidad Tecnológica de León",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#00b59c",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "android/android-launchericon-192-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "android/android-launchericon-512-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "windows11/SplashScreen.scale-200.png",
+      "sizes": "1240x600",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "windows11/LargeTile.scale-200.png",
+      "sizes": "620x620",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ]
+}

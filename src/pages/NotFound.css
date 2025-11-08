@@ -1,0 +1,75 @@
+/* ===============================
+   NOT FOUND - CONGRESO TIC'S
+   =============================== */
+
+.notfound-container {
+  min-height: calc(100vh - 100px);
+  background: linear-gradient(135deg, #f2fcfb, #e6f8f5);
+  padding: 40px 20px;
+}
+
+/* Logo institucional */
+.notfound-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #00b59c;
+  background-color: #fff;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 181, 156, 0.4);
+}
+
+/* Título principal */
+.notfound-title {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #003366;
+  margin-top: 15px;
+}
+
+/* Subtítulo */
+.notfound-subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #009fe3;
+}
+
+/* Texto de error */
+.notfound-error {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Botón institucional */
+.btn-utl {
+  background-color: #00b59c;
+  color: white;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-utl:hover {
+  background-color: #009f83;
+  color: white;
+}
+
+/* Pie de página */
+.notfound-footer {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 30px;
+  line-height: 1.4;
+}
+
+/* Responsividad */
+@media (max-width: 576px) {
+  .notfound-title {
+    font-size: 3.5rem;
+  }
+
+  .notfound-logo {
+    width: 65px;
+    height: 65px;
+  }
+}

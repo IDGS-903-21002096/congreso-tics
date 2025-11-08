@@ -1,0 +1,232 @@
+/* ===============================
+   GAFETE DOBLE CARA - CONGRESO TIC'S (versión final estable)
+   =============================== */
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+.gafete-wrapper {
+  background: linear-gradient(135deg, #f2fcfb, #e6f8f5);
+  min-height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* ===== CONTENEDOR DE TARJETAS ===== */
+.gafete-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 100%;
+  max-width: 950px;
+}
+
+/* ===== TARJETAS ===== */
+.gafete-card {
+  width: 320px;
+  height: 480px;
+  background: #fff;
+  border-radius: 20px;
+  border: 3px solid #00b59c;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gafete-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 22px rgba(0, 181, 156, 0.35);
+}
+
+/* ===== CABECERA CON DEGRADADO (Frontal) ===== */
+.header-pattern {
+  width: 100%;
+  height: 90px;
+  background: linear-gradient(90deg, #003366, #009fe3, #00b59c);
+  border-radius: 18px 18px 0 0;
+}
+
+/* ===== AVATAR ===== */
+.avatar-container {
+  margin-top: -55px;
+}
+
+.avatar-img {
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  border: 4px solid #00b59c;
+  object-fit: cover;
+  background: #fff;
+  box-shadow: 0 0 12px rgba(0, 181, 156, 0.45);
+}
+
+/* ===== TEXTO FRONTAL ===== */
+.nombre {
+  color: #002d62;
+  font-weight: 700;
+  margin-top: 12px;
+}
+
+.ocupacion {
+  color: #009fe3;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.divider {
+  width: 65%;
+  height: 2px;
+  background-color: #00b59c;
+  margin: 10px auto 15px;
+  border-radius: 4px;
+}
+
+/* ===== LOGO UTL (Frontal) ===== */
+.logo-utl {
+  width: 130px !important;
+  height: auto !important;
+  margin: 15px auto 8px;
+  display: block;
+  object-fit: contain;
+  filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.2));
+}
+
+/* ===== LEMA (Frontal) ===== */
+.lema {
+  color: #555;
+  font-style: italic;
+  font-size: 0.95rem;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+/* ===== DECORACIÓN INFERIOR (Frontal) ===== */
+.footer-band {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 45px;
+  width: 100%;
+  background: linear-gradient(90deg, #00b59c, #009fe3);
+  border-radius: 0 0 18px 18px;
+}
+
+/* ===============================
+   🔹 CARA POSTERIOR (solo se modifica esta)
+   =============================== */
+.back {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 25px 20px;
+  border-radius: 20px;
+}
+
+/* ===== QR ===== */
+.qr-container {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.qr-image {
+  width: 130px;
+  height: 130px;
+  border: 2px solid #00b59c;
+  border-radius: 10px;
+  background: #fff;
+  padding: 6px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.qr-text {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 6px;
+  font-style: italic;
+}
+
+/* ===== INFORMACIÓN POSTERIOR ===== */
+.back .nombre {
+  margin-bottom: 5px;
+}
+
+.twitter {
+  color: #00b59c;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.redes {
+  color: #003366;
+  font-size: 0.92rem;
+  line-height: 1.4;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.redes p {
+  margin: 3px 0;
+}
+
+/* ===== LOGO SEP (EDUCACIÓN) ===== */
+.logo-seg-container {
+  margin-top: auto;
+  text-align: center;
+}
+
+.logo-seg {
+  width: 220px;
+  max-width: 100%;
+  margin: 10px auto 0;
+  display: block;
+  opacity: 1;
+}
+
+/* ===== BOTÓN ===== */
+.btn-utl {
+  background-color: #00b59c;
+  color: white;
+  font-weight: 600;
+  border-radius: 25px;
+  padding: 10px 25px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-utl:hover {
+  background-color: #009f83;
+  color: white;
+}
+
+/* ===== RESPONSIVIDAD ===== */
+@media (max-width: 768px) {
+  .gafete-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gafete-card {
+    width: 90%;
+    height: auto;
+  }
+
+  .logo-utl {
+    width: 150px !important;
+  }
+
+  .logo-seg {
+    width: 200px;
+  }
+
+  .qr-image {
+    width: 110px;
+    height: 110px;
+  }
+}

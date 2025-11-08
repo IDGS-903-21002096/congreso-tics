@@ -1,0 +1,32 @@
+.inicio-container {
+  background: linear-gradient(160deg, #003366 40%, #00B59C 100%);
+  color: white;
+}
+
+.inicio-logo {
+  width: 140px;
+  height: auto;
+}
+
+.inicio-titulo {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.inicio-subtitulo {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+button.btn-light {
+  color: #003366;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 10px 30px;
+  transition: all 0.3s ease;
+}
+
+button.btn-light:hover {
+  background-color: #00B59C;
+  color: white;
+}

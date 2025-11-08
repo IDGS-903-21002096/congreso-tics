@@ -1,0 +1,31 @@
+/* Asegurar que el layout ocupe toda la altura */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Contenedor general del layout */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* El main debe crecer para empujar el footer al final */
+main {
+  flex: 1;
+}
+
+/* Footer institucional */
+.footer-utl {
+  background-color: #003366;
+  color: #f8f9fa;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+.footer-utl span {
+  color: #00B59C;
+}
