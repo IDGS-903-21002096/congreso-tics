@@ -4,7 +4,7 @@ import Participantes from "./Participantes";
 import Registro from "./Registro";
 import Gafete from "./Gafete";
 import NotFound from "./NotFound";
-import LayoutPublic from "../layout/LayoutPublic";
+import LayoutPublic from "../Layout/LayoutPublic";
 
 export const router = createBrowserRouter([
   {
